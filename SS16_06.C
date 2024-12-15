@@ -1,13 +1,5 @@
 #include <stdio.h>
-
-int searchElement(int *arr, int size, int value) {
-    for (int i = 0; i < size; i++) {
-        if (arr[i] == value) {
-            return i;
-        }
-    }
-    return -1;
-}
+int searchElement(int *arr, int size, int value);
 
 int main() {
     int arr[] = {1, 2, 4, 5, 6, 7};
@@ -25,5 +17,13 @@ int main() {
     printf("%d\n", result);
 
     return 0;
+}
+int searchElement(int *arr, int size, int value) {
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == value) {
+            return i;
+        }
+    }
+    return -1;
 }
 
