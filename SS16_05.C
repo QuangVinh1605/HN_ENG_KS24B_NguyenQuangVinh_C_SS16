@@ -1,10 +1,7 @@
 #include <stdio.h>
 
-void updateelement(int *arr, int size, int newvalue, int position) {
-    
-    arr[position] = newvalue;
-}
-
+void updateelement(int *arr,int size,int newvalue, int position);
+ 
 int main() {
     int arr[] = {10, 20, 30, 40, 50};
     int size = sizeof(arr) / sizeof(arr[0]);
@@ -26,5 +23,9 @@ int main() {
     printf("\n");
 
     return 0;
+}
+void updateelement(int *arr, int size, int newvalue, int position) {
+    
+    arr[position] = newvalue;
 }
 
